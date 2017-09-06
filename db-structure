@@ -22,15 +22,15 @@ Version 2.0
 
 	Recipe (table)
 		recipe_id 		int 		primary_key 	auto_increment
-		recipe_name 	varchar 	not_null
+		recipe_name 		varchar 	not_null
 		recipe_desc	 	varchar
 		servings		int
-		instructions	varchar
-		recipe_status	int 		not_null
+		instructions		varchar
+		recipe_status		int 		not_null
 
 	Recipe_Ingredients (table)
 		recipe_id 		int 	not_null
-		ingredient_id	int 	not_null
+		ingredient_id		int 	not_null
 		amount_req		int
 
 	Ingredients (table)
