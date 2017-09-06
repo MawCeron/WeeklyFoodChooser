@@ -1,0 +1,48 @@
+Project: Weekly Food Chooser
+Type: Android App
+
+==================
+Version: 1.0
+
+// Database and Table Structure
+
+	Database Name: DishesDB
+
+	Platillos (table)
+		_id 		int 		primary_key 	auto_increment
+		platillo 	varchar 	not_null
+		status 		int 		not_null
+
+==================
+Version 2.0
+
+// Database and Table Structure
+
+	Database Name: Menu_Chooser
+
+	Recipe (table)
+		recipe_id 		int 		primary_key 	auto_increment
+		recipe_name 	varchar 	not_null
+		recipe_desc	 	varchar
+		servings		int
+		instructions	varchar
+		recipe_status	int 		not_null
+
+	Recipe_Ingredients (table)
+		recipe_id 		int 	not_null
+		ingredient_id	int 	not_null
+		amount_req		int
+
+	Ingredients (table)
+		ingredient_id 		int 		primary_key 	auto_increment
+		ingredient_name		varchar 	not_null
+		ingredient_unity	varchar		not_null
+
+	Choosed_Recipes (table)
+		sun		int 
+		mon		int 
+		tue		int 
+		wed		int 
+		thu		int 
+		fri		int 
+		sat		int 

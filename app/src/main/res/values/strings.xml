@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Weekly Food Chooser</string>
     <string name="action_settings">Settings</string>
+    <string name="instructions">Generate a random menu for the week, or add recipes to your database.</string>
+    <string name="menu_img_desc">Generate menu button</string>
+    <string name="recipes_img_desc">Recipes menu button</string>
 </resources>
