@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="org.situvieraunplan.weeklyfoodchooser.RecipeFormActivity"
+    tools:showIn="@layout/activity_recipe_form">
+    
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:padding="20dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textColor="@color/text_buttons"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="12dp"
+            android:inputType="textCapWords"
+            android:textAlignment="center"
+            android:background="@color/backgroundDark"
+            android:id="@+id/title_edit"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:textColor="@color/text_buttons"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:layout_marginBottom="12dp"
+            android:inputType="textMultiLine"
+            android:textAlignment="center"
+            android:background="@color/backgroundDark"
+            android:id="@+id/description_edit"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ingredients"
+            android:textColor="@color/text_buttons"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <ScrollView
+                android:layout_width="285dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="12dp">
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></GridView>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rounded_edit"
+                    android:layout_marginBottom="10dp"
+                    android:padding="3dp"
+                    android:drawableTint="@color/colorAccent"
+                    android:drawableTop="@drawable/ic_add"/>
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rounded_edit"
+                    android:layout_marginTop="10dp"
+                    android:padding="3dp"
+                    android:drawableTint="@color/colorAccent"
+                    android:drawableTop="@drawable/ic_delete"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recipe_instructions"
+            android:textColor="@color/text_buttons"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="20sp"
+            android:layout_marginBottom="12dp"
+            android:inputType="textMultiLine"
+            android:textAlignment="center"
+            android:background="@color/backgroundDark"
+            android:id="@+id/instructions_edit"/>
+        
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

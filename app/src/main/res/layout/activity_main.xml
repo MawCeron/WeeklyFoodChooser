@@ -1,33 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.situvieraunplan.weeklyfoodchooser.MainActivity">
+    tools:context="org.situvieraunplan.weeklyfoodchooser.MainActivity"
+    android:background="@color/backgroundDark">
 
-    <android.support.design.widget.AppBarLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:text="@string/instructions"
+        android:textColor="@color/texts"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textAlignment="center"
+        android:id="@+id/Instructions"/>
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_main" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_below="@id/Instructions"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:gravity="center_horizontal"
+        android:weightSum="1">
 
-</android.support.design.widget.CoordinatorLayout>
+        <Button
+            android:id="@+id/choose_button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginStart="12dp"
+            android:text="@string/generate"
+            android:textColor="@color/text_buttons"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:drawableTop="@drawable/ic_food"
+            android:layout_marginEnd="10dp"
+            android:paddingTop="20dp"/>
+
+        <Button
+            android:id="@+id/recipe_button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginStart="10dp"
+            android:text="@string/recipes"
+            android:textColor="@color/text_buttons"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginEnd="12dp"
+            android:drawableTop="@drawable/ic_recipes"
+            android:paddingTop="20dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

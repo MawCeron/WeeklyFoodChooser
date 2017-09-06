@@ -19,6 +19,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".RecipesActivity"
+            android:label="@string/title_activity_recipes"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.situvieraunplan.weeklyfoodchooser.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ChoosedActivity"
+            android:label="@string/title_activity_choosed"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.situvieraunplan.weeklyfoodchooser.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RecipeFormActivity"
+            android:label="@string/title_activity_recipe_form"
+            android:parentActivityName=".RecipesActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.situvieraunplan.weeklyfoodchooser.RecipesActivity" />
+        </activity>
     </application>
 
 </manifest>

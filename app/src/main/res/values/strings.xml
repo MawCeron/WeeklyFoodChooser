@@ -1,7 +1,32 @@
 <resources>
     <string name="app_name">Weekly Food Chooser</string>
     <string name="action_settings">Settings</string>
-    <string name="instructions">Generate a random menu for the week, or add recipes to your database.</string>
-    <string name="menu_img_desc">Generate menu button</string>
-    <string name="recipes_img_desc">Recipes menu button</string>
+    <string name="instructions">Choose a random menu for your week meals or add recipes to your database.</string>
+    <string name="generate">CHOOSE FOOD</string>
+    <string name="recipes">RECIPES</string>
+
+    <string name="title_activity_recipes">Recipes</string>
+    <string name="recipes_search">Search recipe</string>
+    <string-array name="foods_array">
+        <item>Parmesan Chicken</item>
+        <item>Hamburger</item>
+        <item>Pizza</item>
+        <item>Hotdog</item>
+    </string-array>
+
+    <string name="title_activity_choosed">Chosen Food</string>
+    <string-array name="days">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string name="title">RECIPE TITLE</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="ingredients">INGREDIENTS</string>
+    <string name="recipe_instructions">INSTRUCTIONS</string>
+    <string name="title_activity_recipe_form">Recipe</string>
 </resources>
