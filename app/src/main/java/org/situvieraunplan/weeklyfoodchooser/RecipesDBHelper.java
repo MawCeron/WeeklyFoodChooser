@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class RecipesDBHelper extends SQLiteOpenHelper {
     private static int version = 2;
-    private static String name = "WFC_DB";
+    private static String name = "WFC.db";
     private static SQLiteDatabase.CursorFactory factory = null;
 
     public RecipesDBHelper(Context context)
@@ -25,7 +25,22 @@ public class RecipesDBHelper extends SQLiteOpenHelper {
 
         db.execSQL("CREATE UNIQUE INDEX recipe_name ON Recipe(recipe_name ASC)");
 
-        db.execSQL("CREATE TABLE Recipe_Ingredients (");
+        db.execSQL("CREATE TABLE Recipe_Ingredients ("+
+                "recipe_id INTEGER NOT NULL,"+
+                "ingredient_id INTEGER NOT NULL)");
+
+        db.execSQL("CREATE TABLE Ingredients ("+
+                "ingredient_id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "ingredient_name TEXT NOT NULL");
+
+        db.execSQL("CREATE TABLE Choosed_recipes (" +
+                "sun INTEGER," +
+                "mon INTEGER," +
+                "tue INTEGER," +
+                "wed INTEGER," +
+                "thu INTEGER," +
+                "fri INTEGER," +
+                "sat INTEGER)");
 
     }
 
