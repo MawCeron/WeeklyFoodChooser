@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="choose_ingredient">Elige un ingrediente de la lista</string>
+    <string name="generate">ELEGIR COMIDAS</string>
+    <string name="ingredients">INGREDIENTES</string>
+    <string name="instructions">Elige un menú aleatorio para tus comidas de la semana o agrega recetas a tu base de datos.</string>
+    <string name="recipe_instructions">INSTRUCCIONES</string>
+    <string name="action_settings">Configuración</string>
+    <string name="recipes">RECETAS</string>
+    <string name="recipes_search">Buscar receta</string>
+    <string name="title">NOMBRE DE LA RECETA</string>
+    <string name="title_activity_choosed">Comidas Elegida</string>
+    <string name="title_activity_recipe_form">Receta</string>
+    <string name="title_activity_recipes">Recetas</string>
+    <string name="new_ingredient">Ingrediente nuevo</string>
+    <string name="add_new_ingredient">O agrega uno nuevo</string>
+</resources>

@@ -30,27 +30,8 @@
             android:textSize="20sp"
             android:layout_marginBottom="12dp"
             android:inputType="textCapWords"
-            android:textAlignment="center"
             android:background="@color/backgroundDark"
             android:id="@+id/title_edit"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/description"
-            android:textColor="@color/text_buttons"
-            android:textStyle="bold"
-            android:textSize="20sp"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:textSize="20sp"
-            android:layout_marginBottom="12dp"
-            android:inputType="textMultiLine"
-            android:textAlignment="center"
-            android:background="@color/backgroundDark"
-            android:id="@+id/description_edit"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -62,17 +43,19 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="180dp"
             android:orientation="horizontal">
 
             <ScrollView
                 android:layout_width="285dp"
                 android:layout_height="match_parent"
-                android:layout_marginEnd="12dp">
+                android:layout_marginEnd="12dp"
+                android:background="@color/backgroundDark">
 
-                <GridView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"></GridView>
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ingredients_lv" />
 
             </ScrollView>
 
@@ -88,7 +71,8 @@
                     android:layout_marginBottom="10dp"
                     android:padding="3dp"
                     android:drawableTint="@color/colorAccent"
-                    android:drawableTop="@drawable/ic_add"/>
+                    android:drawableTop="@drawable/ic_add"
+                    android:id="@+id/add_ingredient"/>
                 <Button
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -96,7 +80,8 @@
                     android:layout_marginTop="10dp"
                     android:padding="3dp"
                     android:drawableTint="@color/colorAccent"
-                    android:drawableTop="@drawable/ic_delete"/>
+                    android:drawableTop="@drawable/ic_delete"
+                    android:id="@+id/remove_ingredient"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -111,11 +96,10 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="150dp"
             android:textSize="20sp"
             android:layout_marginBottom="12dp"
             android:inputType="textMultiLine"
-            android:textAlignment="center"
             android:background="@color/backgroundDark"
             android:id="@+id/instructions_edit"/>
         
