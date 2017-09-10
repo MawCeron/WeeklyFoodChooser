@@ -15,7 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:backgroundTint="@color/backgroundLight"> </Spinner>
+        android:backgroundTint="@color/backgroundLight"
+        android:id="@+id/ing_spinner"> </Spinner>
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -23,14 +24,16 @@
         android:text="@string/add_new_ingredient"
         android:textColor="@color/colorAccent"
         android:buttonTint="@color/backgroundLight"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+        android:id="@+id/ing_check"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:hint="@string/new_ingredient"
-        android:enabled="false"/>
+        android:enabled="false"
+        android:id="@+id/ing_edit"/>
 
 
 </LinearLayout>
